@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
+import Notes from './components/Note';
 
 function App() {
+  const skills = [
+    { id: 1, name: "plumbing" },
+    { id: 2, name: "wiring" },
+    { id: 3, name: "painting" }
+  ]
+  const handleDelete = () => {
+    alert(`delete this`)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Learn React </h1>
+        <Skills skills={skills} />
+      {/* <Counter/> */}
+      <Notes handleDelete={handleDelete}/>
     </div>
   );
 }
