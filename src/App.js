@@ -2,6 +2,7 @@
 import './App.css';
 import Counter from './components/Counter';
 import Notes from './components/Note';
+import Skills from './components/Skills';
 
 function App() {
   const skills = [
